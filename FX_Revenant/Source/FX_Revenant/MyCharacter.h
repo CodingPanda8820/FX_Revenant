@@ -18,6 +18,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	virtual void PostInitializeComponents() override;
 
 public:	
 	// Called every frame
@@ -28,6 +29,7 @@ public:
 
 	//	Action Mapping
 	void Attack();
+	void AttackCheck();
 
 	//	Axis Mapping
 	void UpDown(float Value);
